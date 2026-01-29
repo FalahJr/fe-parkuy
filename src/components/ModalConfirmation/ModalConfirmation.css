@@ -1,0 +1,95 @@
+.modal-confirmation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000003d;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-confirmation-centered {
+    margin: 15% 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.modal-confirmation {
+    width: 700px;
+    /* background: #fff; */
+    background: #00000000;
+    /* background: #00000018; */
+
+}
+
+.modal-confirmation-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    /* box-sizing: border-box; */
+
+    /* background: #00000018; */
+    /* background-color: transparent; */
+    /* opacity: 0.0 - 1.0; */
+    /* visibility: hidden; */
+
+}
+.modal-confirmation-title {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 15px;
+    /* height: 60px; */
+    box-sizing: border-box;
+    font-size: 23px;
+}
+
+.modal-confirmation-closemark button{
+    background: #00000000;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 66px;
+box-sizing: border-box;
+    /* font-size: 15px; */
+}
+
+.modal-confirmation-closemark button h1{
+    font-size: 30px;
+}
+/* 
+.modal-confirmation-title {
+
+}
+
+.modal-confirmation-closemark {
+
+} */
+
+.modal-confirmation-body {
+    padding: 10px;
+    background-color: #F8F8F8;
+    border-radius:15px 15px 0 0;
+    text-align: center;
+}
+
+.modal-confirmation-body .form-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 10px; */
+    
+}
+
+
+.modal-confirmation-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}

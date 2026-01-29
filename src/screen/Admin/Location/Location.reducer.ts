@@ -1,0 +1,52 @@
+import React, { Reducer } from "react"
+
+interface LoginForm {
+    id_location: string;
+    locationName: any;
+    cityName: string;
+    car: string;
+    motorCycle: string;
+    address: string;
+    coordinate: string;
+    rate: string;
+    status: boolean;
+}
+
+interface LoginState {
+    isSubmitted: boolean
+    sending: boolean
+    inputs: LoginForm
+}
+
+type LoginAction = 
+    | { name: 'SET_IS_SUBMITTED' }
+    | { name: 'SET_SENDING', payload: boolean }
+    | { name: "SET_INPUTS", payload: Partial<LoginForm> }
+
+const reducer: Reducer<LoginState,   LoginAction> = (state, action) => {
+    switch (action.name) {
+        case 'SET_SENDING':
+            return {...state, sending: action.payload}
+            break;
+        
+        case "SET_IS_SUBMITTED":
+            return {...state, isSubmitted: true}
+            break;
+
+        case 'SET_INPUTS':
+            return {
+                ...state,
+                inputs: {
+                    ...state.inputs,
+                    ...action.payload
+                }
+            }
+            break;
+
+        default:
+            return state
+            break;
+    }
+}
+
+export default reducer

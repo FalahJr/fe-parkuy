@@ -1,0 +1,577 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  body{
+    overflow-x: hidden;
+    font-family: "SF Pro Display Regular" !important;
+    background-color: #F68C05;
+  }
+  #check {
+    display: none;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 2.5%;
+    width: 90%;
+    height: 75px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    z-index: 10;
+  }
+
+  nav .header-logo {
+    float: left;
+  }
+
+  nav .header-logo .img-logo {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    border-radius: 0 0 15px 15px;
+  }
+
+  nav .header-logo .img-logo img {
+    line-height: 10px;
+    height: 40px;
+    transition: 0.5s;
+    padding: 10px 17px;
+    text-align: center;
+  }
+
+  nav ul {
+    float: right;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li:hover a {
+    border-bottom: 3px solid #66B1F2;
+  }
+
+  nav ul.list li a {
+    text-decoration: none;
+    line-height: 50px;
+    color: #fff;
+    padding: 5px 12.5px;
+    font-family: "SF Pro Display Medium";
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 0.25s;
+  }
+
+  nav.black {
+    left: 0%;
+    width: 100%;
+    background: white;
+    height: 70px;
+  }
+
+  nav.black .header {
+    padding: 0 50px 0 50px;
+  }
+
+  nav.black ul li a {
+    color: #033059;
+    padding: 5px 12.5px;
+
+    text-decoration: none;
+    line-height: 50px;
+    font-family: "SF Pro Display Medium";
+    font-size: 17px;
+    text-transform: uppercase;
+    transition: 0.25s;
+  }
+
+  div.slideshow {
+    background-color: rgba(0, 0, 0, 1);
+    max-height: 100vt;
+    width: 100%;
+  }
+
+  div.slideshow img {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    opacity: 0.9;
+  }
+  /* div.slideshow .title-quotes{
+    height: auto;
+  } */
+  div.slideshow .quotes {
+    text-align: center;
+    border-radius: 2px;
+    padding-bottom: 2.5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "SF Pro Display Medium" !important;
+    width: 100%;
+  }
+
+  div.slideshow .quotes h1 {
+    max-width: 100%;
+    font-size: 155px;
+    margin-bottom: -80px;
+    color: #66B1F2;
+  }
+
+  div.slideshow .quotes h2 {
+    font-size: 92px;
+  }
+
+  div.slideshow .quotes2 {
+    text-align: center;
+    border-radius: 2px;
+    padding-bottom: 2.5px;
+    position: absolute;
+    /* bottom: 10px; */
+    top:75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "SF Pro Display Medium" !important;
+    width: 100%;
+  }
+
+  div.slideshow .quotes2 .button {
+    background-color: #033059;
+    border: none;
+    color: white;
+    font-family: "SF Pro Display Medium" !important;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  div.slideshow .quotes2 .button i{
+    font-size: 25px;
+    margin-right: 5px;
+  }
+
+  .layanan {
+    background-color: #010E1B;
+    /* height: 100vh; */
+    /* max-width: 100%; */
+
+}
+
+.layanan .title-layanan h1 {
+    text-align: center;
+    border-radius: 2px;
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    font-family: "SF Pro Display Regular" !important;
+    width: 100%;
+  }
+
+  .layanan .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width:100%;
+    margin-top: 70px;
+
+    /* background-color: white; */
+  }
+
+  .layanan .row .column {
+    /* background-color:orangered; */
+    color: white; 
+    width: 33%;
+    padding:20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+ 
+
+  .layanan .row .column img {
+    padding: 10px;
+    /* background-color: white; */
+    box-sizing: border-box;
+    width: 90%;
+    height: 500px; 
+    object-fit:fill;
+}
+
+.layanan .row .column h2 {
+  font-family: "SF Pro Display Medium";
+  font-size: 35px;
+}
+
+.layanan .row .column p {
+  font-family: "SF Pro Display Regular";
+  font-size: 20px;
+}
+
+section.wave {
+  position: relative;
+  align-items: center;
+  min-height: 200px;
+  padding-top: 100px;
+  background: #010E1B;
+}
+
+.benefit {
+  height: 100vh;
+  width: 100%;
+}
+
+.benefit .title-benefit h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: "SF Pro Display Regular" !important;
+}
+
+.benefit .text-benefit {
+  text-align: center;
+  color: #fff;
+  font-family: "SF Pro Display Medium" !important;
+  width: 100%;
+
+}
+
+.benefit .text-benefit h1 {
+  font-size: 175px;
+  color: #66B1F2;
+  
+}
+
+.benefit .text-benefit .image-button {
+  transform: translate(0%, -65%);
+}
+
+.benefit .text-benefit .image-button img {
+  width: 75%;
+}
+
+.benefit .text-benefit .image-button .button {
+  background-color: #033059;
+  border: 1px solid #66B1F2;
+  color: white;
+  font-family: "SF Pro Display Medium" !important;
+  padding: 15px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 70px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+section.wave .curve {
+  position: absolute;
+  z-index: -1;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+section.wave .curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 98%;
+  transform: translate(0%, 52%);
+  background-color: #010E1B;
+}
+
+.download {
+  margin-top: 150px;
+  height: 100vh;
+}
+
+.download img {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.download .title-download {
+  text-align: center;
+  border-radius: 2px;
+  z-index: -1;
+  top: 40%;
+  transform: translate(0%, 230px);
+  color: #fff;
+  font-family: "SF Pro Display Medium" !important;
+  width: 100%;
+  font-size: 28px;
+}
+
+.download .title-download .button {
+  background-color: #033059;
+  border: none;
+  color: white;
+  width: 27%;
+  font-family: "SF Pro Display Light" !important;
+  padding: 25px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.download .title-download .button i{
+  font-size:35px;
+  margin-right: 5px;
+}
+footer {
+  margin-top: 40px;
+  width: 100%;
+  background: #111;
+}
+
+footer .content {
+  /* background-color: orangered; */
+  padding: 70px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer .content .box {
+  padding:20px;
+  /* background-color: black; */
+  /* width: 50%; */
+  width: 20%;
+  box-sizing: border-box;
+}
+
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+footer .content p {
+  text-align: justify;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer .content p, a {
+  color: #fff;
+}
+
+footer .content .lower i {
+  padding-right: 16px;
+}
+
+footer .content .middle a {
+  font-family: "SF Pro Display Medium" !important;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+footer .content .middle i {
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+
+
+footer .bottom {
+  width:100%;
+  padding: 0 40px 5px 0;
+}
+
+footer .bottom p{
+  text-align: center;
+  color: #d9d9d9;
+  
+}
+footer .bottom a {
+  color: #66B1F2;
+}
+
+
+
+/* Responsive Style */
+@media screen and (min-width: 993px) {
+  nav .togglers{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  nav {
+    left: 0%;
+
+    width: 100%;
+  }
+
+  nav ul.list {
+    margin-top: 5px;
+    /* float:left; */
+    width: 100%;
+    display: none; 
+    background-color: white;
+
+    /* opacity: 0;*/
+  }
+
+  nav ul.slide{
+    display: block;
+    transform: translateY(0.1%);
+
+  }
+  nav .list .item a{
+    color: black;
+  }
+  
+  nav .list .item:hover{
+    background-color: #66B1F2;
+  }
+
+  nav .list .item:hover a{
+    border-bottom: 0px;
+    color: white;
+  }
+  nav .header .togglers{
+    float: right;
+    font-size: 30px;
+    margin: auto 20px;
+    padding: 20px 0;
+    /* display: block; */
+    /* position: absolute; */
+  }
+
+  nav.black .header {
+    padding: 0;
+  }
+
+  nav.black .togglers i{
+    color: black;
+  }
+
+  div.slideshow .quotes{
+    top:16%;
+  }
+  div.slideshow .quotes h1{
+    font-size: 32px;
+    margin-bottom: -30px;
+  }
+
+  div.slideshow .quotes h2{
+    font-size: 32px;
+  }
+  
+  div.slideshow .quotes2 {
+    top:28%
+  }
+
+  div.slideshow .quotes2 h1{
+    font-size: 18px;
+  }
+  div.slideshow .quotes2 .button {
+   font-size:13px;
+   padding: 12px 15px;
+   margin: 0;
+  }
+
+  div.slideshow .quotes2 .button i{
+    font-size: 17px;
+  }
+
+  .layanan .title-layanan h1{
+    font-size: 30px;
+  }
+
+  .layanan .row .column{
+    width: 100%;
+  }
+
+  .layanan .row .column img{
+    width: 60%;
+    height: auto; 
+  }
+
+  .benefit{
+    height:50vh;
+  }
+  .benefit .title-benefit h1 {
+    font-size: 40px;
+    margin-bottom: 65px;
+  }
+
+  .benefit .text-benefit h1 {
+    font-size: 65px;
+  }
+
+  .benefit .text-benefit .image-button {
+  transform: translate(0%, -50%);
+
+  }
+
+  .benefit .text-benefit .image-button img {
+    width: 100%;
+  }
+
+  .benefit .text-benefit .image-button .button {
+    padding: 13px 25px;
+    font-size: 17px;
+  }
+
+  .download{
+    height: 50vh;
+  }
+
+  .download img{
+    height: 50vh ;
+  }
+
+  .download .title-download{
+    transform: translate(5%,17vh);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .download .title-download .button{
+    transform: translate(-20%,0%);
+    padding: 13px 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 40%;
+  }
+
+  .download .title-download .button i{
+    font-size: 20px;
+  }
+
+  footer .content .box {
+    width: 100%;
+  }
+}

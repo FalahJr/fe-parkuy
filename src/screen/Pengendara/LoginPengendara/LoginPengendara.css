@@ -1,0 +1,284 @@
+/* Login Pengendara Styles - Inspired by Figma Mockup */
+
+.login-pengendara-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  padding: 20px;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.login-pengendara-wrapper {
+  width: 100%;
+  max-width: 450px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-pengendara-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px 32px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.login-pengendara-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.login-pengendara-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+}
+
+.login-pengendara-icon svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.login-pengendara-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 8px;
+}
+
+.login-pengendara-subtitle {
+  font-size: 15px;
+  color: #718096;
+  margin: 0;
+}
+
+/* Form */
+.login-pengendara-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Error Message */
+.login-pengendara-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 12px;
+  color: #c53030;
+  font-size: 14px;
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+.login-pengendara-error svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Input Group */
+.login-pengendara-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-pengendara-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.login-pengendara-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login-pengendara-input-icon {
+  position: absolute;
+  left: 16px;
+  width: 20px;
+  height: 20px;
+  color: #a0aec0;
+  pointer-events: none;
+}
+
+.login-pengendara-input {
+  width: 100%;
+  padding: 14px 16px 14px 48px;
+  font-size: 15px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #f7fafc;
+}
+
+.login-pengendara-input:focus {
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.login-pengendara-input.error {
+  border-color: #fc8181;
+  background: #fff5f5;
+}
+
+.login-pengendara-input::placeholder {
+  color: #a0aec0;
+}
+
+.login-pengendara-input:disabled {
+  background: #edf2f7;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Submit Button */
+.login-pengendara-button {
+  width: 100%;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.login-pengendara-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.login-pengendara-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.login-pengendara-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Spinner */
+.login-pengendara-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer */
+.login-pengendara-footer {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.login-pengendara-footer p {
+  font-size: 14px;
+  color: #718096;
+  margin: 0;
+}
+
+.login-pengendara-link {
+  color: #667eea;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.login-pengendara-link:hover:not(:disabled) {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.login-pengendara-link:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-pengendara-card {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .login-pengendara-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .login-pengendara-icon svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .login-pengendara-title {
+    font-size: 24px;
+  }
+
+  .login-pengendara-subtitle {
+    font-size: 14px;
+  }
+}

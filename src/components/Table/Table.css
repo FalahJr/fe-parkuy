@@ -1,0 +1,162 @@
+.table-content .table-container {
+    width: 95%;
+    overflow-x: scroll;
+  
+  }
+  
+  .table-content .table-container .table-data {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    background-color: #033059;
+  }
+  
+  
+  .table-data th {
+    padding: 15px 17px;
+    text-align: left;
+    color:white;
+
+  }
+  
+  .table-data td {
+    background-color: #fff;
+    border-bottom: 1px solid #E6E6E6;
+    /* height: 107px; */
+    padding: 15px 16px;
+  }
+  
+  /* berkas */
+  .table-data td .berkasBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  
+/*   
+  .table-data td .berkasBtn button {
+    width: 95px;
+    height: 33px;
+    left: 772px;
+    top: 53px;
+    background: #1ED830;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+  } */
+/*   
+  .table-data td .interviewBtn button {
+    width: 162px;
+    height: 37px;
+    background: #FFFFFF;
+    border: 2px solid #D6D6D6;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+  } */
+/*   
+  .table-data td .detailBtn button {
+    width: 37px;
+    height: 37px;
+    left: 911px;
+    top: 32px;
+    background: #FFFFFF;
+    border: 2px solid #D6D6D6;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+  } */
+  
+  /* end berkas */
+  /* start location */
+  .table-data td .capacity {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  
+  .table-data td .capacity .count-vehicle {
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+    align-items: center;
+  }
+  
+  .table-data td .statusLocation {
+    text-align: center;
+  }
+  
+  .table-data td .coordinate{
+    /* background-color: green; */
+    font-size: 12.5px;
+    font-weight:bolder;
+    /* font-size: 1px; */
+  }
+  .table-data .statusLocation button.green {
+    width: 21px;
+    height: 21px;
+    background: #1ED830;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+  
+  }
+  .table-data .statusLocation button.red {
+    width: 21px;
+    height: 21px;
+    background: red;
+    border: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+  
+  }
+
+  .table-data td .action-location{
+    display:flex;
+    gap: 10px;
+    /* margin: 5px 5px; */
+  }
+/* 
+  .table-data tfoot {
+    
+  } */
+
+  .table-content .pagination-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* background-color: red; */
+    width:100%;
+    margin-top: 20px;
+  }
+  
+  .table-content .pagination-container .pagination-button {
+    display: inline-block;
+    /* width: 211px; */
+  }
+  
+  .table-content .pagination-container .pagination-button button {
+    color: black;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    width: 30px;
+  height: 33px;
+  text-align: center;
+  box-sizing: border-box;
+  }
+  
+  .table-content .pagination-container .pagination-button button.active {
+    background-color: #D6D6D6;
+    border: 1px solid #D6D6D6;
+  }
+  
+  .table-content .pagination-container .pagination-button button:hover {
+    background-color: #D6D6D6;
+  }

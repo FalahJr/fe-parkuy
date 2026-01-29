@@ -1,0 +1,39 @@
+/* FONT INTER */
+@font-face {
+    font-family: 'Inter Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inter Regular'), url('../../../public/assets/font/Inter-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Inter Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Thin'), url('../../../public/assets/font/Inter-Thin.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Inter Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Light'), url('../../../public/assets/font/SF-Pro-Display-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Inter Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Medium'), url('../../../public/assets/font/Inter-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Inter Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Inter Bold'), url('../../../public/assets/font/Inter-Bold.woff') format('woff');
+}

@@ -1,0 +1,74 @@
+
+.box {
+    align-items: center;
+    width: calc(100% / 3 - 15px);
+    background: #fff;
+    border-radius: 12px;
+}
+
+.overview-boxes .box .card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview-boxes .box .card .right-side {
+    padding: 15px 14px;
+}
+
+.overview-boxes .box .box-topic{
+    box-sizing: border-box;
+}
+
+
+/* Card Style */
+
+.one .box-topic {
+    border-radius: 16px;
+    background-color: #44A1F2;
+    position: relative;
+    padding: 8px 11px;
+    /* right:5px; */
+    font-family: "Inter Medium";
+    width: 143px;
+    height: 43px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.one .box-topic i {
+    font-size: 22px;
+}
+
+.two .box-topic {
+    border-radius: 16px;
+    background-color: #F29F05;
+    position: relative;
+    padding: 8px 11px;
+    /* right:5px; */
+    font-family: "SF Pro Display Medium";
+    width: 143px;
+    height: 43px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+.overview-boxes .three .box-topic {
+    border-radius: 16px;
+    background-color: #1ED830;
+    position: relative;
+    padding: 8px 11px;
+    /* right:5px; */
+    font-family: "SF Pro Display Medium";
+    width: 143px;
+    height: 43px;
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}

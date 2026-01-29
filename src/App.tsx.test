@@ -1,0 +1,28 @@
+import React from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import PublicLayout from "./layouts/PublicLayout/PublicLayout";
+import AuthenticationLayout from "./layouts/AuthenticationLayout/AuthenticationLayout"
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PublicLayout />}>
+          <Route path="/" element={<h1>Home Page</h1>} />
+          <Route path="/company-profile" element={<h1>Company Profile</h1>} />
+        </Route>
+
+        <Route path="/auth" element={<AuthenticationLayout />}>
+          <Route path="/auth/login" element={<h1>Masuk</h1>} />
+          <Route path="/auth/register" element={<h1>Daftar</h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;

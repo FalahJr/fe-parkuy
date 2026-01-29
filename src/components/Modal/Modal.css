@@ -1,0 +1,164 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000003d;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-centered {
+    margin: 5% 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.modal {
+    width: 700px;
+    /* background: #fff; */
+    background: #00000000;
+    /* background: #00000018; */
+
+
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    /* box-sizing: border-box; */
+
+    /* background: #00000018; */
+    /* background-color: transparent; */
+    /* opacity: 0.0 - 1.0; */
+    /* visibility: hidden; */
+
+}
+.modal-title {
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 15px;
+    /* height: 60px; */
+    box-sizing: border-box;
+    font-size: 23px;
+}
+
+.modal-closemark button{
+    background: #00000000;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 66px;
+box-sizing: border-box;
+    /* font-size: 15px; */
+}
+
+.modal-closemark button h1{
+    font-size: 30px;
+}
+/* 
+.modal-title {
+
+}
+
+.modal-closemark {
+
+} */
+
+.modal-body {
+    padding: 10px;
+    background-color: #F8F8F8;
+    border-radius:15px 15px 0 0;
+    height: 60vh;
+    overflow-y: scroll;
+
+}
+
+.modal-body .form-group{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* padding: 10px; */
+    
+}
+
+.modal-body .form-group .form-input{
+    /* background-color: seagreen; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* margin-right: 25px; */
+    padding:15px 30px;
+    box-sizing: border-box;
+}
+
+.modal-body .form-group .form-input .input-kapasitas{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.modal-body .form-group .form-input .koordinat-status{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.modal-body .form-group .form-input .koordinat-status select{
+    margin-top: 16px;
+    box-sizing: border-box;
+    width: 160px;
+    height: 30px;
+
+}
+.modal-body .form-group .form-input input{
+    box-sizing: border-box;
+    width: 260px;
+    height: 30px;
+    margin-top: 16px;
+    /* padding:10px 30px; */
+}
+
+
+.modal-body .form-group .form-input .input-kapasitas .form-group-kapasitas{
+    /* width: 100%; */
+    /* background-color: seagreen; */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* padding-right:5px; */
+
+
+}
+.modal-body .form-group .form-input .input-kapasitas .form-group-kapasitas input{
+    box-sizing: border-box;
+    width: 90%;
+    height: 30px;
+    margin-top: 16px;
+    /* margin-right:20px; */
+}
+.modal-body .form-group .form-input .input-kapasitas .form-group-kapasitas label{
+    box-sizing: border-box;
+    font-size: 13px;
+    /* width: 20%; */
+    height: 30px;
+    /* margin-top: 16px; */
+    /* margin-right:20px; */
+    /* padding:10px 30px; */
+}
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+}
