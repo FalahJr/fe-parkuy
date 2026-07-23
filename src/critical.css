@@ -1,0 +1,159 @@
+/* Critical CSS - Inline in head for immediate render */
+/* Hero section + navbar minimal styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #f6f9fc 0%, #eef4f9 100%);
+  color: #12304a;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 16px;
+  width: calc(100% - 32px);
+  height: 84px;
+  box-sizing: border-box;
+  transition: 0.35s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border-radius: 0 0 28px 28px;
+  background: rgba(8, 23, 38, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 40px rgba(8, 23, 38, 0.2);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 14px;
+}
+
+/* Hero Section */
+.home-hero {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding: 0;
+}
+
+.home-hero__media {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(9, 30, 66, 0.18);
+}
+
+.home-hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 24, 40, 0.82) 0%,
+      rgba(7, 24, 40, 0.42) 45%,
+      rgba(7, 24, 40, 0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(7, 24, 40, 0.18) 0%,
+      rgba(7, 24, 40, 0.45) 100%
+    );
+}
+
+.home-hero__content {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 28px;
+  width: 100%;
+  min-height: 100vh;
+  max-width: none;
+  padding: clamp(32px, 6vw, 80px);
+  margin-left: 0;
+  align-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 27, 43, 0.7) 0%,
+    rgba(10, 27, 43, 0.38) 30%
+  );
+  border: 0;
+  color: #fff;
+}
+
+.home-hero__copy,
+.home-hero__actions {
+  width: min(560px, 100%);
+}
+
+.home-hero__copy h1 {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1;
+  font-size: clamp(3.4rem, 9vw, 6rem);
+  letter-spacing: -0.05em;
+}
+
+.home-hero__copy h2 {
+  margin: 14px 0 0;
+  font-size: clamp(1.3rem, 2.7vw, 2.2rem);
+  font-weight: 500;
+  color: rgba(236, 245, 255, 0.94);
+}
+
+.home-button {
+  border: 0;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.home-button--primary {
+  background: linear-gradient(135deg, #f6a74d 0%, #f68c05 100%);
+  color: #10263a;
+  box-shadow: 0 16px 34px rgba(246, 140, 5, 0.3);
+}
+
+/* Below-the-fold optimization */
+.home-services,
+.home-benefit,
+.home-download {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 820px;
+}

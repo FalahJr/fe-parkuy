@@ -6,7 +6,7 @@ html, body {
 
   body{
     overflow-x: hidden;
-    font-family: "SF Pro Display Regular" !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif !important;
     background-color: #F68C05;
   }
   #check {
@@ -62,7 +62,8 @@ html, body {
     line-height: 50px;
     color: #fff;
     padding: 5px 12.5px;
-    font-family: "SF Pro Display Medium";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 500;
     font-size: 17px;
     text-transform: uppercase;
     transition: 0.25s;
@@ -85,7 +86,8 @@ html, body {
 
     text-decoration: none;
     line-height: 50px;
-    font-family: "SF Pro Display Medium";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 500;
     font-size: 17px;
     text-transform: uppercase;
     transition: 0.25s;

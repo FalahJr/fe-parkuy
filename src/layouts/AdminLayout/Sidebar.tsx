@@ -31,7 +31,7 @@ useEffect(() => {
         <div className="sidebar">
     <div className="logo-details">
       {/* <span className="logo_name">Parkuy</span> */}
-      <img src="../../../assets/img/Content/logo.png"/>
+      <img src="../../../assets/img/Content/logo.png" width={34} height={34} />
 
     </div>
       <ul className="nav-links">
