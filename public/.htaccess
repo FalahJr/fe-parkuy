@@ -1,3 +1,26 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect www to bare domain over HTTPS in a single hop.
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteCond %{HTTP_HOST} !^www\.localhost(:[0-9]+)?$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
+  # Force HTTPS outside local development hosts.
+  RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+  # Keep SPA routes on a single request without redirect chains.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/plain text/html text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript application/javascript application/json application/xml image/svg+xml
 </IfModule>
@@ -9,6 +32,7 @@
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
   ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType application/manifest+json "access plus 1 day"
   ExpiresByType application/json "access plus 1 hour"
 
   ExpiresByType image/png "access plus 1 year"
@@ -22,6 +46,8 @@
 </IfModule>
 
 <IfModule mod_headers.c>
+  Header append Vary "Accept-Encoding"
+
   <FilesMatch "\.(js|css|png|jpg|jpeg|webp|svg|ico|woff|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>

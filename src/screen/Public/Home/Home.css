@@ -201,6 +201,13 @@
   padding-bottom: 72px;
 }
 
+.home-services,
+.home-benefit,
+.home-download {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 820px;
+}
+
 .home-services__inner {
   width: min(1120px, 100%);
   margin: 0 auto;

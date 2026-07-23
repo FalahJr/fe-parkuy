@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 			<div className="left box">
 				<div className="upper">
 					<div className="topic">
-						<img src="assets/img/Content/logo-footer.png" width="40%" alt=""/>
+						<img src="assets/img/Content/logo-footer.png" width="40%" alt="" loading="lazy" decoding="async"/>
 					</div>
 					<p>Parkuy merupakan Platform yang mengdigitalisasi Sistem Parkir dan juga menyediakan lapangan
 						pekerjaan untuk tukang parkir agar mendapatkan pekerjaan yang layak.</p>
@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
 			</div>
 			<div className="right box">
 				<div className="topic">Bekerja Sama Dengan</div>
-				<img src="assets/img/Content/pemda.png" width="20%" alt=""/>
+				<img src="assets/img/Content/pemda.png" width="20%" alt="" loading="lazy" decoding="async"/>
 			</div>
 		</div>
 		<div className="bottom">

@@ -25,7 +25,8 @@ const ProfilePengendara = lazy(
   () => import("./screen/Pengendara/ProfilePengendara/ProfilePengendara"),
 );
 const EditProfilePengendara = lazy(
-  () => import("./screen/Pengendara/EditProfilePengendara/EditProfilePengendara"),
+  () =>
+    import("./screen/Pengendara/EditProfilePengendara/EditProfilePengendara"),
 );
 const LocationSearch = lazy(
   () => import("./screen/Pengendara/LocationSearch/LocationSearch"),

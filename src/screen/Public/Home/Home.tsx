@@ -9,15 +9,21 @@ const Home: React.FC = () => {
     <main className="home-page">
       <section className="home-hero" id="home">
         <div className="home-hero__media">
-          <img
-            className="home-hero__image"
-            src="assets/img/Content/Image.png"
-            alt="Parkuy hero"
-            width={1920}
-            height={1080}
-            loading="eager"
-            decoding="async"
-          />
+          <picture>
+            <source
+              srcSet="assets/img/Content/Image.home.webp"
+              type="image/webp"
+            />
+            <img
+              className="home-hero__image"
+              src="assets/img/Content/Image.home.jpg"
+              alt="Parkuy hero"
+              width={1366}
+              height={853}
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
           <div className="home-hero__overlay" />
         </div>
 
@@ -50,26 +56,38 @@ const Home: React.FC = () => {
 
           <div className="home-services__grid">
             <article className="home-service-card">
-              <img
-                src="assets/img/Content/ilustrasi1.png"
-                alt="Ilustrasi parkir di bahu jalan"
-                width={240}
-                height={240}
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  srcSet="assets/img/Content/ilustrasi1.home.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/img/Content/ilustrasi1.home.jpg"
+                  alt="Ilustrasi parkir di bahu jalan"
+                  width={220}
+                  height={300}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <h2>Parkir di Bahu Jalan</h2>
               <p>Parkiran di bahu jalan terasa lebih nyaman dan aman.</p>
             </article>
             <article className="home-service-card">
-              <img
-                src="assets/img/Content/ilustrasi2.png"
-                alt="Ilustrasi petugas parkir"
-                width={240}
-                height={240}
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  srcSet="assets/img/Content/ilustrasi2.home.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/img/Content/ilustrasi2.home.jpg"
+                  alt="Ilustrasi petugas parkir"
+                  width={223}
+                  height={300}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <h2>Petugas Parkir</h2>
               <p>
                 Petugas yang profesional dan memanfaatkan teknologi dalam
@@ -77,14 +95,20 @@ const Home: React.FC = () => {
               </p>
             </article>
             <article className="home-service-card">
-              <img
-                src="assets/img/Content/ilustrasi3.png"
-                alt="Ilustrasi pembayaran cashless"
-                width={240}
-                height={240}
-                loading="lazy"
-                decoding="async"
-              />
+              <picture>
+                <source
+                  srcSet="assets/img/Content/ilustrasi3.home.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/img/Content/ilustrasi3.home.jpg"
+                  alt="Ilustrasi pembayaran cashless"
+                  width={221}
+                  height={300}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
               <h2>Bayar Secara Cashless</h2>
               <p>
                 Petugas akan menunjukkan QR Code dari QRIS dan bayar sesuai
@@ -110,29 +134,41 @@ const Home: React.FC = () => {
           </div>
 
           <div className="home-benefit__media">
-            <img
-              src="assets/img/Content/benefit-parkir.png"
-              alt="Ilustrasi petugas parkir"
-              width={420}
-              height={360}
-              loading="lazy"
-              decoding="async"
-            />
+            <picture>
+              <source
+                srcSet="assets/img/Content/benefit-parkir.home.webp"
+                type="image/webp"
+              />
+              <img
+                src="assets/img/Content/benefit-parkir.home.jpg"
+                alt="Ilustrasi petugas parkir"
+                width={840}
+                height={559}
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>
 
       <div className="scroll" id="download"></div>
       <section className="home-download">
-        <img
-          className="home-download__image"
-          src="assets/img/Content/download.png"
-          alt="Ilustrasi unduh aplikasi Parkuy"
-          width={1920}
-          height={1080}
-          loading="lazy"
-          decoding="async"
-        />
+        <picture>
+          <source
+            srcSet="assets/img/Content/download.home.webp"
+            type="image/webp"
+          />
+          <img
+            className="home-download__image"
+            src="assets/img/Content/download.home.jpg"
+            alt="Ilustrasi unduh aplikasi Parkuy"
+            width={1280}
+            height={800}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
         <div className="home-download__overlay" />
         <div className="home-download__content">
           <h1>Unduh Aplikasi Parkuy di</h1>
