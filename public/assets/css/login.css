@@ -1,15 +1,16 @@
 body {
   margin: 0 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif !important;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    sans-serif !important;
 }
-.auth-layout-wrapper{
+.auth-layout-wrapper {
   background-image: url("../img/bg-login.png");
   display: flex;
   flex-direction: row;
   height: 100vh;
-  
 }
-.auth-layout-left-content-wrapper{
+.auth-layout-left-content-wrapper {
   flex: 1;
   display: flex;
   /* justify-content: center; */
@@ -19,41 +20,43 @@ body {
 .auth-layout-left-content-wrapper img {
   height: 85%;
   position: absolute;
-  bottom:0;
+  bottom: 0;
 }
 
-.auth-layout-left-content-form-wrapper{
+.auth-layout-left-content-form-wrapper {
   position: absolute;
   top: 20%;
-  left:12%;
+  left: 12%;
   /* text-align: center; */
-  width:24%;
+  width: 24%;
   /* font-family: "SF Pro Display Medium" !important; */
 
   /* margin-top:0; */
   /* padding:0; */
 }
-.auth-layout-left-content-form-title-wrapper{
+.auth-layout-left-content-form-title-wrapper {
   text-align: center;
   line-height: 14px;
 }
 
-.auth-layout-left-content-form-title-wrapper h3{
+.auth-layout-left-content-form-title-wrapper h3 {
   font-weight: normal;
   line-height: 15px;
-  font-size:20px;
+  font-size: 20px;
 }
-.auth-layout-left-content-form-title-wrapper h1{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+.auth-layout-left-content-form-title-wrapper h1 {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    sans-serif;
   font-weight: 600;
   font-size: 40px;
 }
-.auth-layout-left-content-form-input-wrapper{
+.auth-layout-left-content-form-input-wrapper {
   margin-top: 60px;
 }
 
-.auth-layout-left-content-form-input-wrapper label{
-  margin-left:5px;
+.auth-layout-left-content-form-input-wrapper label {
+  margin-left: 5px;
 }
 .auth-layout-left-content-form-input-wrapper input {
   width: 100%;
@@ -66,10 +69,10 @@ body {
   box-sizing: border-box;
 }
 
-.auth-layout-left-content-form-input-wrapper input[type=submit] {
+.auth-layout-left-content-form-input-wrapper input[type="submit"] {
   width: 25%;
   /* text-align: center; */
-  background-color: #66B1F2;
+  background-color: #66b1f2;
   color: black;
   padding: 14px 20px;
   margin: 15px 0;
@@ -78,30 +81,30 @@ body {
   cursor: pointer;
 }
 
-.auth-layout-left-content-form-input-wrapper input[type=submit]:hover {
-  background-color: #F2BF27;
+.auth-layout-left-content-form-input-wrapper input[type="submit"]:hover {
+  background-color: #f2bf27;
   transition: 0.1s;
 }
 
-.auth-layout-left-content-form-input-wrapper a{
+.auth-layout-left-content-form-input-wrapper a {
   position: relative;
-  left:69%;
+  left: 69%;
   text-decoration: none;
   font-size: 15px;
-line-height: 18px;
+  line-height: 18px;
 
-/* identical to box height */
-text-align: center;
+  /* identical to box height */
+  text-align: center;
 
-color: #7B9FBF;
+  color: #7b9fbf;
 }
 
-.auth-layout-right-content-wrapper{
+.auth-layout-right-content-wrapper {
   flex: 1;
   color: white;
 }
 
-.auth-layout-content{
+.auth-layout-content {
   padding: 0 64px;
   display: flex;
   flex-direction: column;
@@ -111,40 +114,39 @@ color: #7B9FBF;
   /* height: 100%; */
 }
 
-
 /* Responsive  */
 @media screen and (max-width: 1146px) {
-  .auth-layout-left-content-form-title-wrapper h3{
-    font-size:18px;
+  .auth-layout-left-content-form-title-wrapper h3 {
+    font-size: 18px;
   }
-  .auth-layout-left-content-form-title-wrapper h1{
-    font-size:38px;
+  .auth-layout-left-content-form-title-wrapper h1 {
+    font-size: 38px;
   }
 }
 
 @media screen and (max-width: 1089px) {
-  .auth-layout-left-content-form-title-wrapper h3{
-    font-size:18px;
+  .auth-layout-left-content-form-title-wrapper h3 {
+    font-size: 18px;
   }
-  .auth-layout-left-content-form-title-wrapper h1{
-    font-size:35px;
+  .auth-layout-left-content-form-title-wrapper h1 {
+    font-size: 35px;
   }
 }
 
 @media screen and (max-width: 1003px) {
-  .auth-layout-left-content-form-title-wrapper h3{
-    font-size:16px;
+  .auth-layout-left-content-form-title-wrapper h3 {
+    font-size: 16px;
   }
-  .auth-layout-left-content-form-title-wrapper h1{
-    font-size:33px;
+  .auth-layout-left-content-form-title-wrapper h1 {
+    font-size: 33px;
   }
 }
 @media screen and (max-width: 946px) {
-  .auth-layout-left-content-form-title-wrapper h3{
-    font-size:14px;
+  .auth-layout-left-content-form-title-wrapper h3 {
+    font-size: 14px;
   }
-  .auth-layout-left-content-form-title-wrapper h1{
-    font-size:30px;
+  .auth-layout-left-content-form-title-wrapper h1 {
+    font-size: 30px;
     /* line-height: 30px; */
   }
 }

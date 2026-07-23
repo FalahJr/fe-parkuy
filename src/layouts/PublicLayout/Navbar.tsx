@@ -62,7 +62,12 @@ const Navbar: React.FC = () => {
       <div className="header">
         <div className="header-logo">
           <div className="img-logo">
-            <img src="assets/img/Content/logo.png" alt="Logo" width={34} height={34} />
+            <img
+              src="assets/img/Content/logo.png"
+              alt="Logo"
+              width={34}
+              height={34}
+            />
           </div>
         </div>
         <div className="togglers">
