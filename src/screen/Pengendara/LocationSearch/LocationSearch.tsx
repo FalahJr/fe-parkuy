@@ -4,6 +4,7 @@ import { locationService } from "../../../services";
 import { locationSearchReducer, initialState } from "./LocationSearch.reducer";
 import "./LocationSearch.css";
 import "leaflet/dist/leaflet.css";
+import "../../../utils/leafletConfig";
 
 const LocationSearch: React.FC = () => {
   const [state, dispatch] = useReducer(locationSearchReducer, initialState);

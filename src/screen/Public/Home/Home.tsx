@@ -13,6 +13,10 @@ const Home: React.FC = () => {
             className="home-hero__image"
             src="assets/img/Content/Image.png"
             alt="Parkuy hero"
+            width={1920}
+            height={1080}
+            loading="eager"
+            decoding="async"
           />
           <div className="home-hero__overlay" />
         </div>
@@ -46,12 +50,26 @@ const Home: React.FC = () => {
 
           <div className="home-services__grid">
             <article className="home-service-card">
-              <img src="assets/img/Content/ilustrasi1.png" alt="" />
+              <img
+                src="assets/img/Content/ilustrasi1.png"
+                alt="Ilustrasi parkir di bahu jalan"
+                width={240}
+                height={240}
+                loading="lazy"
+                decoding="async"
+              />
               <h2>Parkir di Bahu Jalan</h2>
               <p>Parkiran di bahu jalan terasa lebih nyaman dan aman.</p>
             </article>
             <article className="home-service-card">
-              <img src="assets/img/Content/ilustrasi2.png" alt="" />
+              <img
+                src="assets/img/Content/ilustrasi2.png"
+                alt="Ilustrasi petugas parkir"
+                width={240}
+                height={240}
+                loading="lazy"
+                decoding="async"
+              />
               <h2>Petugas Parkir</h2>
               <p>
                 Petugas yang profesional dan memanfaatkan teknologi dalam
@@ -59,7 +77,14 @@ const Home: React.FC = () => {
               </p>
             </article>
             <article className="home-service-card">
-              <img src="assets/img/Content/ilustrasi3.png" alt="" />
+              <img
+                src="assets/img/Content/ilustrasi3.png"
+                alt="Ilustrasi pembayaran cashless"
+                width={240}
+                height={240}
+                loading="lazy"
+                decoding="async"
+              />
               <h2>Bayar Secara Cashless</h2>
               <p>
                 Petugas akan menunjukkan QR Code dari QRIS dan bayar sesuai
@@ -85,7 +110,14 @@ const Home: React.FC = () => {
           </div>
 
           <div className="home-benefit__media">
-            <img src="assets/img/Content/benefit-parkir.png" alt="" />
+            <img
+              src="assets/img/Content/benefit-parkir.png"
+              alt="Ilustrasi petugas parkir"
+              width={420}
+              height={360}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
@@ -95,7 +127,11 @@ const Home: React.FC = () => {
         <img
           className="home-download__image"
           src="assets/img/Content/download.png"
-          alt=""
+          alt="Ilustrasi unduh aplikasi Parkuy"
+          width={1920}
+          height={1080}
+          loading="lazy"
+          decoding="async"
         />
         <div className="home-download__overlay" />
         <div className="home-download__content">
