@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 import { storageService } from ".";
 
 const main = axios.create({
-  baseURL: "http://103.150.226.229:3000/api/",
+  baseURL: "http://23.101.4.143:3000/api/",
   // baseURL: "http://localhost:3000/api/",
   // baseURL: "https://funny-munich-mother-inter.trycloudflare.com/api/",
 

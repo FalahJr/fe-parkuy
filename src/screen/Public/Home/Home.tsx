@@ -1,102 +1,112 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-      <div className="scroll" id="home"></div>
-      <div className="slideshow">
-        <img
-          className="d-block w-100"
-          src="assets/img/Content/Image.png"
-          alt="First slide"
-        />
-        <div className="quotes">
-          <h1>Parkuy</h1>
-          <h2>Digitalisasi Sistem Parkir</h2>
+    <main className="home-page">
+      <section className="home-hero" id="home">
+        <div className="home-hero__media">
+          <img
+            className="home-hero__image"
+            src="assets/img/Content/Image.png"
+            alt="Parkuy hero"
+          />
+          <div className="home-hero__overlay" />
         </div>
-        <div className="quotes2">
-          <h1>Bingung Mau Parkir Dimana?</h1>
-          <button
-            className="button"
-            onClick={() => navigate("/pengendara/location-search")}
-          >
-            <i className="fa fa-map-marker"></i> Cari Area Parkir
-          </button>
+
+        <div className="home-hero__content">
+          <div className="home-hero__copy">
+            <p className="home-hero__eyebrow">Parkuy</p>
+            <h1>Parkuy</h1>
+            <h2>Digitalisasi Sistem Parkir</h2>
+          </div>
+
+          <div className="home-hero__actions">
+            <h3>Bingung Mau Parkir Dimana?</h3>
+            <button
+              className="home-button home-button--primary"
+              onClick={() => navigate("/pengendara/location-search")}
+            >
+              <i className="fa fa-map-marker"></i>
+              Cari Area Parkir
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
 
       <div className="scroll" id="layanan"></div>
-      <div className="layanan">
-        <div className="title-layanan">
-          <h1>Fokus Layanan Kami</h1>
+      <section className="home-section home-services">
+        <div className="home-services__inner">
+          <div className="home-section__header">
+            <h1>Fokus Layanan Kami</h1>
+          </div>
+
+          <div className="home-services__grid">
+            <article className="home-service-card">
+              <img src="assets/img/Content/ilustrasi1.png" alt="" />
+              <h2>Parkir di Bahu Jalan</h2>
+              <p>Parkiran di bahu jalan terasa lebih nyaman dan aman.</p>
+            </article>
+            <article className="home-service-card">
+              <img src="assets/img/Content/ilustrasi2.png" alt="" />
+              <h2>Petugas Parkir</h2>
+              <p>
+                Petugas yang profesional dan memanfaatkan teknologi dalam
+                pelayanannya.
+              </p>
+            </article>
+            <article className="home-service-card">
+              <img src="assets/img/Content/ilustrasi3.png" alt="" />
+              <h2>Bayar Secara Cashless</h2>
+              <p>
+                Petugas akan menunjukkan QR Code dari QRIS dan bayar sesuai
+                biaya parkir
+              </p>
+            </article>
+          </div>
         </div>
-        <br />
-        <div className="row">
-          <div className="column">
-            <img src="assets/img/Content/ilustrasi1.png" alt="" />
-            <h2>Parkir di Bahu Jalan</h2>
-            <p>Parkiran di bahu jalan terasa lebih nyaman dan aman.</p>
-          </div>
-          <div className="column">
-            <img src="assets/img/Content/ilustrasi2.png" alt="" />
-            <h2>Petugas Parkir</h2>
-            <p>
-              Petugas yang profesional dan memanfaatkan teknologi dalam
-              pelayanannya.
-            </p>
-          </div>
-          <div className="column">
-            <img src="assets/img/Content/ilustrasi3.png" alt="" />
-            <h2>Bayar Secara Cashless</h2>
-            <p>
-              Petugas akan menunjukkan QR Code dari QRIS dan bayar sesuai biaya
-              parkir
-            </p>
-          </div>
-        </div>
-      </div>
+      </section>
 
       <div className="scroll" id="benefit"></div>
-      <section className="wave">
-        <div className="benefit">
-          <div className="title-benefit">
-            <h1>Jadi Petugas Parkir</h1>
+      <section className="home-benefit">
+        <div className="home-section__header home-section__header--light">
+          <h1>Jadi Petugas Parkir</h1>
+        </div>
+
+        <div className="home-benefit__card">
+          <div className="home-benefit__text">
+            <h2>Petugas Parkir</h2>
+            <button className="home-button home-button--secondary">
+              Selengkapnya
+            </button>
           </div>
-          <div className="text-benefit">
-            <h1>Petugas Parkir</h1>
-            <div className="image-button">
-              <img src="assets/img/Content/benefit-parkir.png" alt="" />
-              <br />
-              <button className="button">Selengkapnya</button>
-            </div>
+
+          <div className="home-benefit__media">
+            <img src="assets/img/Content/benefit-parkir.png" alt="" />
           </div>
         </div>
-        <br />
-        <div className="curve"></div>
       </section>
-      <br />
-      <br />
-      <br />
-      <br />
+
       <div className="scroll" id="download"></div>
-      <div className="download">
+      <section className="home-download">
         <img
-          className="d-block w-100"
+          className="home-download__image"
           src="assets/img/Content/download.png"
-          alt="First slide"
+          alt=""
         />
-        <div className="title-download">
+        <div className="home-download__overlay" />
+        <div className="home-download__content">
           <h1>Unduh Aplikasi Parkuy di</h1>
-          <button className="button">
-            <i className="fab fa-google-play"></i> Google Play
+          <button className="home-button home-button--primary home-button--play">
+            <i className="fab fa-google-play"></i>
+            Google Play
           </button>
         </div>
-        <br />
-      </div>
-    </>
+      </section>
+    </main>
   );
 };
 export default Home;

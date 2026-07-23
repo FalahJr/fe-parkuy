@@ -172,28 +172,28 @@ export default () => {
             {new Date(value.date).getMonth() === 0
               ? " Januari "
               : new Date(value.date).getMonth() === 1
-              ? " Februari "
-              : new Date(value.date).getMonth() === 2
-              ? " Maret "
-              : new Date(value.date).getMonth() === 3
-              ? " April "
-              : new Date(value.date).getMonth() === 4
-              ? " Mei "
-              : new Date(value.date).getMonth() === 5
-              ? " Juni "
-              : new Date(value.date).getMonth() === 6
-              ? " Juli "
-              : new Date(value.date).getMonth() === 7
-              ? " Agustus "
-              : new Date(value.date).getMonth() === 8
-              ? " September "
-              : new Date(value.date).getMonth() === 9
-              ? " Oktober "
-              : new Date(value.date).getMonth() === 10
-              ? " November "
-              : new Date(value.date).getMonth() === 11
-              ? " Desember "
-              : null}
+                ? " Februari "
+                : new Date(value.date).getMonth() === 2
+                  ? " Maret "
+                  : new Date(value.date).getMonth() === 3
+                    ? " April "
+                    : new Date(value.date).getMonth() === 4
+                      ? " Mei "
+                      : new Date(value.date).getMonth() === 5
+                        ? " Juni "
+                        : new Date(value.date).getMonth() === 6
+                          ? " Juli "
+                          : new Date(value.date).getMonth() === 7
+                            ? " Agustus "
+                            : new Date(value.date).getMonth() === 8
+                              ? " September "
+                              : new Date(value.date).getMonth() === 9
+                                ? " Oktober "
+                                : new Date(value.date).getMonth() === 10
+                                  ? " November "
+                                  : new Date(value.date).getMonth() === 11
+                                    ? " Desember "
+                                    : null}
             {new Date(value.date).getFullYear()}
           </div>
         ),
