@@ -68,7 +68,8 @@ const Footer: React.FC = () => {
       </div>
       <div className="bottom">
         <p>
-          Copyright © 2022 <a href="#">Pattimura Team C</a> All rights reserved
+          Copyright © 2026 <a href="#">Khoiru Miftakhul Falah</a> All rights
+          reserved
         </p>
       </div>
     </footer>
